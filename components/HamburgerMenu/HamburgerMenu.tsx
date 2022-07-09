@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { slide as Menu } from "react-burger-menu";
-import { styles } from "./styles";
+import { useHamburgerMenuItems } from "./hooks/useHamburgerMenuItems";
+import { styles } from "./styles/styles";
 
-export const HamburgerMenu = () => (
-  <Menu styles={styles}>
-    <Link href="/projects">
-      <a style={styles.bmItem}>Projects</a>
-    </Link>
-    <Link href="/developer">
-      <a style={styles.bmItem}>Developer</a>
-    </Link>
-  </Menu>
-);
+export const HamburgerMenu = () => {
+  const {
+    data: { hamburgerMenuItems },
+  } = useHamburgerMenuItems();
+  return (
+    <Menu styles={styles}>
+      {hamburgerMenuItems}
+    </Menu>
+  );
+};
