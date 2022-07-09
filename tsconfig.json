@@ -1,16 +1,13 @@
 {
   "compilerOptions": {
+    "types": ["node", "jest"],
     "baseUrl": "./",
     "paths": {
       "@components/*": ["components/*"],
-      "@styles/*": ["styles/*"],
+      "@styles/*": ["styles/*"]
     },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -22,14 +19,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "outDir": "./dist"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "jest.config.js", "babel.config.js"],
+  "compileOnSave": true
 }
