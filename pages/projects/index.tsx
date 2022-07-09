@@ -1,5 +1,7 @@
-export const Projects = () => (
-    <div>
-        <p>Hello Projects</p>
-    </div>
-)
+const Projects = () => (
+  <div>
+    <p>Hello Projects</p>
+  </div>
+);
+
+export default Projects;
