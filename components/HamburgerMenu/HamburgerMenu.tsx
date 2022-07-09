@@ -1,14 +1,14 @@
 import Link from "next/link";
+import { slide as Menu } from "react-burger-menu";
+import { styles } from "./styles";
 
 export const HamburgerMenu = () => (
-  <button id="hamburger-menu">
-    <nav id="sidebar-menu">
-      <Link href="/projects">
-        <a>Projects</a>
-      </Link>
-      <Link href="/developer">
-        <a>Developer</a>
-      </Link>
-    </nav>
-  </button>
+  <Menu styles={styles}>
+    <Link href="/projects">
+      <a style={styles.bmItem}>Projects</a>
+    </Link>
+    <Link href="/developer">
+      <a style={styles.bmItem}>Developer</a>
+    </Link>
+  </Menu>
 );
