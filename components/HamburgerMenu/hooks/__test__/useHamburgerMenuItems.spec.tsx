@@ -1,8 +1,8 @@
 import { renderHook } from "@testing-library/react-hooks";
 import { useHamburgerMenuItems } from "../useHamburgerMenuItems";
 
-describe("", () => {
-  it("", () => {
+describe("useHamburgerMenuItems", () => {
+  it("should return a list of hamburger menu items", () => {
     const { hamburgerMenuItems } = renderHook(() => useHamburgerMenuItems())
       .result.current.data;
 
