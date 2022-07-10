@@ -6,7 +6,10 @@ export const useHamburgerMenuItems = () => {
     <Link key="0" href="/projects">
       <a style={styles.bmItem}>Projects</a>
     </Link>,
-    <Link key="1" href="/developer">
+    <Link key="1" href="/">
+      <a style={styles.bmItem}>Home</a>
+    </Link>,
+    <Link key="2" href="/developer">
       <a style={styles.bmItem}>Developer</a>
     </Link>,
   ];

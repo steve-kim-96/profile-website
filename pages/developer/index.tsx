@@ -1,7 +1,11 @@
+import { BaseLayout } from "@components/BaseLayout/BaseLayout";
+
 const Developer = () => (
-  <div>
-    <p>Hello Developer</p>
-  </div>
+  <BaseLayout>
+    <div>
+      <p>Hello Developer</p>
+    </div>
+  </BaseLayout>
 );
 
 export default Developer;
