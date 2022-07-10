@@ -13,30 +13,33 @@ export const LandingPage = () => (
     <HamburgerMenu />
     <main className={styles.main}>
       <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
-          <h2>Documentation &rarr;</h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className={styles.card}>
-          <h2>Learn &rarr;</h2>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
+        <a href="https://github.com/steve-kim-96" className={styles.card}>
+          <h2>Github &rarr;</h2>
+          <img src="/github-logo.svg" alt="Github Logo" />
         </a>
 
         <a
-          href="https://github.com/vercel/next.js/tree/canary/examples"
+          href="https://www.linkedin.com/in/steve-soungku-kim/"
           className={styles.card}
         >
-          <h2>Examples &rarr;</h2>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <h2>LinkedIn &rarr;</h2>
+          <img src="/linkedin-logo.svg" alt="LinkedIn Logo" />
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://drive.google.com/file/d/1Wxh4AMv5mB8aOkf_XC4FKcfW0YjoVjzf/view?usp=sharing"
           className={styles.card}
         >
-          <h2>Deploy &rarr;</h2>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
+          <h2>CV &rarr;</h2>
+          <img src="/cv-logo.svg" alt="CV Logo" />
+        </a>
+
+        <a
+          href="https://www.upwork.com/freelancers/~01616f97733da7d799"
+          className={styles.card}
+        >
+          <h2>Upwork &rarr;</h2>
+          <img src="/upwork-logo.svg" alt="Upwork Logo" />
         </a>
       </div>
     </main>
