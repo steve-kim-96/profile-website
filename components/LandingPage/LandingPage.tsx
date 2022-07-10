@@ -10,7 +10,6 @@ export const LandingPage = () => (
       <meta name="description" content="Steve Kim" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <HamburgerMenu />
     <main className={styles.main}>
       <div className={styles.grid}>
         <a href="https://nextjs.org/docs" className={styles.card}>
